@@ -3,10 +3,11 @@
 }
 
 body{
+    font-family: sans-serif;
     background-color: darkgray;
     margin: 0;
 }
-
+/* HEADER: */
 .header{
     position: relative;
     background-color: #333;
@@ -26,4 +27,29 @@ body{
 
 .span__menu{
     right: 10%;
+}
+/* MAIN:------------------------------------------ */
+
+.sub-title,
+.icon-top,
+.title{
+    text-align: center;
+}
+
+.sub-title{
+    margin-top: 4%;
+}
+
+.icon-top{
+    display: block;
+}
+
+/* DIV: -------------------------------------------*/
+
+.container{
+    text-align: center;
+}
+
+.container__img{
+    width: 200px;
 }
