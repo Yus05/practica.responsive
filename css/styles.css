@@ -2,13 +2,37 @@
     box-sizing: border-box;
 }
 
+@media screen and (min-width:340px) {
+    body{
+        min-height: 360vh;
+    }
+}
+/*  QUE DICE AQUI: Cuando en la pantalla tiene un ancho minimo de... DA LA RESPUESTA VIENDO EL VIDEO: https://cursos.doriandesings.com/path-player?courseid=css-intermedio&unit=6182dbb9a9e58e0313399e5cUnit MIN 4 */
+
+@media screen and (min-width:1024px) {
+    body{
+        min-height: 200vh;
+    }
+}
+/*  QUE DICE AQUI: Cuando en la pantalla tiene un ancho minimo de... */
+
+
 body{
     position: relative;
-    font-family: 'Montserrat', sans-serif;;
+    /* min-height: 360vh;  */
+    /* min-height: 200vh;  */
+    font-family: 'Montserrat', sans-serif;
     background-color: #fff;
     margin: 0;
+    border: 4px solid red;
+    /* @media (min-width:1024px){
+        min-height: 200vh;
+    } */
 }
+
+
 /* HEADER: ------------------------------------------*/
+
 .header{
     position: relative;
     background-color: #333;
@@ -29,6 +53,7 @@ body{
 .span__menu{
     right: 10%;
 }
+
 /* MAIN:------------------------------------------*/
 .sub-title,
 .icon-top,
@@ -67,9 +92,9 @@ body{
 /* Franja de color: */
 .color{
     position: relative;
+    width: 100%;
     z-index: -1;
     top: 200px;
-    width: 100%;
     height: 15rem;
     background-color: rgb(38, 79, 93);
 }
@@ -99,8 +124,8 @@ body{
 
 /* footer: */
 .footer{
-    position: relative;
-    top: 450px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 10rem;
     background-color: #333;
