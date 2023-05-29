@@ -2,36 +2,18 @@
     box-sizing: border-box;
 }
 
-@media screen and (min-width:340px) {
-    body{
-        min-height: 360vh;
-    }
-}
-/*  QUE DICE AQUI: Cuando en la pantalla tiene un ancho minimo de... DA LA RESPUESTA VIENDO EL VIDEO: https://cursos.doriandesings.com/path-player?courseid=css-intermedio&unit=6182dbb9a9e58e0313399e5cUnit MIN 4 */
-
-@media screen and (min-width:1024px) {
-    body{
-        min-height: 200vh;
-    }
-}
-/*  QUE DICE AQUI: Cuando en la pantalla tiene un ancho minimo de... */
-
-
 body{
     position: relative;
-    /* min-height: 360vh;  */
-    /* min-height: 200vh;  */
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
     margin: 0;
-    border: 4px solid red;
-    /* @media (min-width:1024px){
-        min-height: 200vh;
-    } */
 }
 
-
-/* HEADER: ------------------------------------------*/
+@media screen and (min-width:375px) and (max-width: 400px) {
+    body{
+        min-height: 365vh;
+    }
+    /* HEADER: ------------------------------------------*/
 
 .header{
     position: relative;
@@ -90,7 +72,127 @@ body{
 }
 
 /* Franja de color: */
-.color{
+.block-color{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    top: 200px;
+    height: 15rem;
+    background-color: rgb(38, 79, 93);
+}
+/* p,link y boton. */
+.contact{
+    position: relative;
+    text-align: center;
+    top: 1650px;
+}
+
+.contact__text{
+    font-size: .8rem;
+    margin-bottom: 1.5rem;
+}
+
+.ancla{
+    text-decoration: none;
+    color: black;
+}
+
+.ancla:hover{
+    color: rgb(38, 79, 93);
+    text-decoration: underline;
+}
+
+.contact__buttom{
+    text-decoration: none;
+    background-color: rgb(38, 79, 93);
+    color: #fff;
+    padding: .8rem 1.8rem;
+}
+
+.contact__buttom:hover{
+    background-color: #333;
+    color: rgb(38, 79, 93);
+}
+
+
+/* footer: */
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+    background-color: #333;
+}
+}
+
+/*----------------------------------------------- Escritorio: */
+
+
+@media screen and (min-width:1024px) and (max-width:1400px) {
+    body{
+        min-height: 200vh;
+    }
+
+    /* HEADER: ------------------------------------------*/
+
+.header{
+    position: relative;
+    background-color: #333;
+    height: 50px;
+}
+
+.span__logo,
+.span__menu{
+    position: absolute;
+    bottom: 15%;
+    color: lightsteelblue;
+}
+
+.span__logo{
+    left: 10%;
+}
+
+.span__menu{
+    right: 10%;
+}
+
+/* MAIN:------------------------------------------*/
+.sub-title,
+.icon-top,
+.title{
+    text-align: center;
+}
+
+.sub-title{
+    margin-top: 4%;
+}
+
+.icon-top{
+    color:  rgb(38, 79, 93);
+    display: block;
+    font-size: 2rem;
+}
+
+/* DIVS:*/
+/* Imagenes: */
+
+.main{
+  position: relative;
+}
+
+.container{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.container__img{
+    width: 200px;
+    margin: 5px;
+}
+
+/* Franja de color: */
+.block-color{
     position: relative;
     width: 100%;
     z-index: -1;
@@ -105,7 +207,7 @@ body{
     top: 400px;
 }
 
-.text{
+.contact__text{
     font-size: .8rem;
     margin-bottom: 1.5rem;
 }
@@ -115,11 +217,21 @@ body{
     color: black;
 }
 
-.buttom{
+.ancla:hover{
+    color: rgb(38, 79, 93);
+    text-decoration: underline;
+}
+
+.contact__buttom{
     text-decoration: none;
     background-color: rgb(38, 79, 93);
     color: #fff;
     padding: .8rem 1.8rem;
+}
+
+.contact__buttom:hover{
+    background-color: #333;
+    color: rgb(38, 79, 93);
 }
 
 /* footer: */
@@ -130,3 +242,5 @@ body{
     height: 10rem;
     background-color: #333;
 }
+}
+
